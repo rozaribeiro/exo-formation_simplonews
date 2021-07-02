@@ -1,0 +1,147 @@
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-form-connexion {
+    width: 65%;
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-image {
+    width: 35%;
+    
+}
+
+.form-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 65%;
+    padding: 10%;
+}
+
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.text {
+    background-color: #C4C4C4;
+    border: none;
+    padding: 5%;
+}
+
+.valider {
+    background: #504DC1;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5%;
+    cursor: pointer;
+}
+
+
+
+.box-form a {
+    text-decoration: none;
+    color: #646464;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+
+.creation-compte {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.creation-compte input {
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+.container-form-register {
+    width: 65%;
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    display: none;
+     
+}
+
+.profil {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 770px) {
+    .form-image {
+        display: none;
+    }
+
+    .container-form-connexion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-form-register {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .creation-compte {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 13px;
+    }
+
+    .text {
+        width: 6rem;
+    }
+}

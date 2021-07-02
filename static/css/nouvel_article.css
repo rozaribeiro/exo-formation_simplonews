@@ -1,0 +1,110 @@
+/* mobile */
+.titre-categorie h3 {
+  border-bottom: 2px solid #ce0033;
+  margin: 1em 0 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+  width: max-content;
+}
+main .container section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+.nouvel-article {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nouvel-article p {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0;
+}
+.nouvel-article p label {
+  margin-bottom: 0.5em;
+}
+.nouvel-article p label span.required-start {
+  color: #ce0033;
+  font-size: 0.9em;
+}
+.nouvel-article p label span.required-exemple {
+  font-size: 0.6em;
+  color: #666;
+  margin-left: 1em;
+}
+.nouvel-article p input,
+.nouvel-article p textarea,
+.nouvel-article p select {
+  padding: 15px;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
+.nouvel-article p select {
+  appearance: none;
+}
+.nouvel-article p input[type="submit"] {
+  background-color: #ce0033;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+aside {
+  display: none;
+}
+
+/* Desktop Version */
+@media screen and (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  .nouvel-article {
+    width: 60%;
+  }
+  aside {
+    display: flex;
+    width: 36%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  aside div {
+    /* background-color: #ff0; */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #444;
+  }
+  aside div h3 {
+    padding: 1em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ce0033;
+  }
+  aside div ul {
+    list-style: none;
+  }
+  .info-users {
+    font-weight: bold;
+  }
+  aside div ul li {
+    padding: 0.6em 1em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  aside div ul li:nth-of-type(even) {
+    background-color: #eee;
+  }
+}

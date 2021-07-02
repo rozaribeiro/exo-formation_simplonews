@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvel article</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nouvel_article.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="titre-categorie">
+                <h3>Nouvel Article</h3>
+            </div>
+            <section>
+                <div class="nouvel-article">
+                    <form action="../views/home.html" method="post">
+                        <p>
+                            <label for="titre">Titre <span class="required-start">*</span></label>
+                            <input name="titre" type="text" placeholder="Taper le titre de l'artice ..." required />
+                        </p>
+                        <p>
+                            <label for="resume">Resume <span class="required-start">*</span><span class="required-exemple">(140 characters max)</span></label>
+                            <input name="resume" type="text" maxlength="140" placeholder="Êcrire un resumé de l'article ..." required />
+                        </p>
+                        <p>
+                            <label for="Contenue">Contenue <span class="required-start">*</span></label>
+                            <textarea name="contenue" type="text" placeholder="Le contenue de l'article..." rows="10"
+                                required></textarea>
+                        </p>
+                        <p>
+                            <label for="image">Image <span class="required-start">*</span><span class="required-exemple">(ex: https://exemple.com/img/nom_image.jpg)</span></label>
+                            <input name="image" type="text" placeholder="Coller le lien d'image ..." required />
+                        </p>
+                        <p>
+                            <label for="categorie">Catégorie <span class="required-start">*</span></label>
+                            <select name="categorie" required></select>
+                        </p>
+                        <p>
+                            <input name="envoyer-article" type="submit" value="Envoyer">
+                        </p>
+                    </form>
+                </div>
+                <aside>
+                    <div class="aside-contenue">
+                        <div>
+                            <h3>Dernier 10 utilisateurs</h3>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/utils.js"></script>
+    <script src="../js/nouvel_article.js"></script>
+</body>
+
+</html>

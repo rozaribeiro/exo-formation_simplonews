@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f0f0f0;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* Header */
+header,
+footer {
+  background-color: #ce0033;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  max-width: 50%;
+}
+header .profil > span {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .profil > span > .fa-user-circle {
+  font-size: 2em;
+  color: #fff;
+  margin-left: 0.3em;
+}
+/* Profil */
+.profil {
+  position: relative;
+  color: #fff;
+}
+.display-profil {
+  font-size: 1em;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+.display-profil ul {
+  list-style: none;
+}
+.display-profil ul li {
+  width: max-content;
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.display-profil ul li a {
+  text-decoration: none;
+  color: #555;
+}
+.display-profil ul li i {
+  color: #aaa;
+  margin-right: 0.5em;
+}
+
+.profil span .fa-circle {
+  color: #5ebd3e;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 0;
+  font-size: 0.8em;
+  background-color: #ce0033;
+  position: absolute;
+  right: -4px;
+  bottom: -3px;
+  display: none;
+}
+.display-profil ul li:hover i,
+.display-profil ul li:hover a {
+  color: #ce0033;
+}
+/* Footer */
+footer {
+  background-color: #ce0033;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container .social-media ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .container .social-media ul li a {
+  color: #fff;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+.copyright {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: .8em;
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 0.8em;
+}
